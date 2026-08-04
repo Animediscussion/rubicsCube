@@ -1,8 +1,8 @@
 import Cubie from "./Cubie";
-import useCube from "../hooks/useCube";
+import { useCubeStore } from "../store/cubeStore";
 
 export default function Cube() {
-  const { cubies } = useCube();
+  const cubies = useCubeStore((state) => state.cubies);
 
   return (
     <>

@@ -1,4 +1,5 @@
 import Scene from "./components/Scene";
+import HUD from "./components/HUD";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
         height: "100vh",
       }}
     >
+      <HUD />
       <Scene />
     </div>
   );
