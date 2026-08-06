@@ -4,6 +4,11 @@ export default class CubeEngine {
   constructor() {
     this.reset();
   }
+  addMove(move) {
+    this.history.push(move);
+
+    this.moveCount++;
+  }
 
   reset() {
     this.cubies = createCube();
